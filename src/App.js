@@ -100,7 +100,7 @@ function ChatRoom() {
   );
 }
 
-function ChatMessage(props) {
+function ChatMessage(props) 
   const { text, uid, photoURL } = props.message;
 
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
@@ -108,7 +108,7 @@ function ChatMessage(props) {
   return (
     <>
       <div className={`message ${messageClass}`}>
-        <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} alt="" />
+        <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'}  />
         <p>{text}</p>
       </div>
     </>
